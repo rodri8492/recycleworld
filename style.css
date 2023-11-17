@@ -95,6 +95,9 @@ section h2{
 #agradecimientos h3{
     text-align: center;
 }
+#agradecimientos h4{
+    text-align: center;
+}
 .fotos-momo{
     display: flex;
     flex-direction: column;
