@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <img id="logo" src="imgs/f20bd14a-0cde-4872-b52e-456081368f75.jpeg" alt="">
         <div class="background-header">
-            <h1><span class="green">Recycle</span><span class="blue">World</span> Organization</h1>
+            <h1>
+                <span class="green">Recycle</span><span class="blue">World</span> <br>
+                Organización Sin Fines de Lucro
+            </h1>
             <nav>
                 <ul>
-                    <li><button><a href="#inicio">Inicio</a></button></li>
-                    <li><button><a href="#programa">Programa</a></button></li>
-                    <li><button><a href="#objetivo">Objetivo</a></button></li>
-                    <li><button><a href="#beneficios">Beneficios</a></button></li>
-                    <li><button><a href="#contacto">Contacto</a></button></li>
+                    <li><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li><a class="nav-link" href="#programa">Programa</a></li>
+                    <li><a class="nav-link" href="#objetivo">Objetivo</a></li>
+                    <li><a class="nav-link" href="#calculadora">Calculadora</a></li>
+                    <li><a class="nav-link" href="#beneficios">Beneficios</a></li>
+                    <li><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,7 +36,17 @@
         </section>
         <section id="imagen-botella">
             <img src="imgs/Sin título.png" alt="">
-            <p>Recuerda dejar las botellas en nuestros contenedores de reciclaje, distribuidos por todo el país.</p>
+            <p>Estas botellas pueden ser llevadas y entregadas a nuestras sucursales. Te preguntarás, ¿Dónde quedan sus sucursales? <br>
+            Hasta el momento solo tenemos cuatro distribuidas en todo el país.<br>
+            <h3>Sucursal en Buenos Aires:<br></h3> 
+            Avellaneda Av. Bartolomé Mitre 5425.<br>
+            <h3>Sucursal en Córdoba: <br></h3>
+            Calle San Jerónimo 150, Córdoba.
+            <h3>Sucursal en Mendoza: <br> </h3> 
+            Avenida San Martín 850, Mendoza.
+            <h3>Sucursal en Santa Fe: <br></h3>
+            Calle San Martín 800, Rosario.
+            </p>
         </section>
         <section id="programa">
             <h2>Programa de reciclaje</h2>
@@ -44,6 +58,24 @@
                 cerámica, papel, cartón o incluso residuos de construcción.
             </p>
             <img class="ladrillos-img" src="imgs/maxresdefault.png" alt="">
+            <p>Tambien creamos una calculadora para que puedas calcular cuantos ladrillos puedes hacer con el plástico recaudado.</p>
+            <article id="calculadora">
+                <header class="header-calculadora">
+                    <h1><span class="darkgreen">Recycle</span><span class="darkblue">World</span></h1>
+                    <h3>Se estima 8 ladrillos ecológicos cada 1 KG de plástico.</h3>
+                </header>
+                <main>
+                    <form id="brickCalculator">
+                        <label for="plasticWeight">KG de Plástico:</label>
+                        <br>
+                        <input type="number" id="plasticWeight" placeholder="Ingrese el peso en kg" required>
+                        <br><br>
+                        <button type="button" id="calcular">Calcular</button>
+                        <br>
+                        <span id="resultado"></span>
+                    </form>
+                </main>
+            </article>
             <h2>Proceso de fabricación</h2>
             <h3><span class="rojo">1.</span> Selección de materiales</h3>
             <p>
@@ -55,7 +87,8 @@
             <p>
                 Los materiales seleccionados se mezclan en proporciones específicas.<br>
                 Esta mezcla puede incluir diferentes tipos de materiales reciclados para 
-                lograr la resistencia y durabilidad deseada.
+                lograr la resistencia y durabilidad deseada.<br>
+                Se incorpora agua para crear una mezcla homogénea.
             </p>
             <h3><span class="rojo">3.</span> Aglutinantes y aditivos</h3>
             <p>
@@ -70,21 +103,46 @@
             </p>
             <h3><span class="rojo">5.</span> Curado</h3>
             <p>Los ladrillos se dejan curar y endurecer.<br>
-                Este proceso puede ocurrir al aire libre o en condiciones controladas, dependiendo del tipo de materiales utilizados y del método de fabricación.</p>
+                Estos se dejan secar al aire libre o en secaderos controlados, utilizando la energía solar o térmica para acelerar el proceso.</p>
             <h3><span class="rojo">6.</span> Pruebas de calidad</h3>
             <p>
                 Los ladrillos pasan por pruebas de calidad para garantizar que cumplan con los estándares de resistencia 
                 y durabilidad requeridos para su uso en construcción.
             </p>
         </section>
-        <section id="objetivo">
-            <h2>Nuestros objetivos en mente</h2>
+        <section>
+            <h2>Plantas de producción</h2>
             <p>
-                Tenemos muchos objetivos en cuenta para desarrollar nuestra organizacion y poder llegar a muchas
-                partes del mundo con nuestro programa de reciclaje básico. <br>
+                Tenemos varias plantas de producción distribuidas en algunas zonas de Argentina.
+            </p>
+                <h3>Planta EcoBrick</h3>
+            <p>
+                Ubicada en Buenos Aires, esta planta es la principal instalación de producción de ladrillos ecológicos de RecycleWorld.<br>
+                Cuenta con maquinaria avanzada para la mezcla y compactación de materiales reciclados, así como sistemas de secado eficientes. <br>
+                La planta tiene capacidad para procesar grandes volúmenes de restos cerámicos, vidrio reciclado, plásticos y otros materiales, y produce una amplia gama de ladrillos ecológicos para su distribución.
+            </p>
+                <h3>Centro EcoCycle</h3>
+            <p>
+                En Córdoba, RecycleWorld tiene un centro de producción más pequeño pero altamente especializado.<br>
+                Este centro se enfoca en ladrillos ecológicos de diseño específico y se destaca por experimentar con nuevos materiales reciclados y tecnologías de fabricación más sostenibles.
+            </p>
+                <h3>Planta GreenBrick</h3>
+            <p>
+                Ubicada en Mendoza, esta planta de producción está estratégicamente situada para aprovechar los recursos regionales.<br>
+                Se centra en la producción de ladrillos ecológicos para proyectos de construcción locales, con un enfoque en la adaptación de sus productos a las necesidades climáticas de la región.
+            </p>
+        </section>
+        <section id="objetivo">
+            <h2>Nuestros objetivos y misiones</h2>
+            <p>
+                Nuestra mision es ser reconocidos mundialmente para poder llegar a los paises mas necesitados y aportar con lo que podamos para mejorar la calidad de la mayoria de la infraestructura. <br>
+                Esto nos llevara mucho tiempo, pero no duden que haremos lo posible para lograrlo!!!
+                Queremos tocar el corazón de cada pais del mundo para lograr que el planeta sea más limpio. <br>
+                Nuestro objetivo es incentivar al reciclaje para que los residuos no sean desechados y sean reutilizados. <br>
                 Pero para ello, precisamos de la ayuda de todos ustedes para poder progresar y 
-                potenciar la construccion de infraestructura en las zonas más precarias. <br>
-                Queremos tocar el corazón de cada pais del mundo para lograr que el planeta sea más limpio.
+                potenciar la recoleccion para la construccion de escuelas, hospitales, viviendas y mucho más en las zonas más precarias. <br>
+                
+                Estamos tratando de aportar una solucion al problema de la acumulacion de residuos convirtiendolos en material nuevo. RecycleWorld quiere ser visto como una de las principales organizaciones en el ámbito del reciclaje.
             </p>
         </section>
         <section id="beneficios">
@@ -113,12 +171,13 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="contacto">
         <h3>Contacto</h3>
         <p><b>Teléfono:</b> +54 11 4679-3384</p>
-        <p><b>Sucursal:</b>  Avellaneda Av. Bartolomé Mitre 5425</p>
-        <p>&copy; 2023 Reciclando con <span class="green">Recycle</span><span class="blue">World</span>. Organizacion Argentina.</p>
+        <p><b>Sucursal Principal:</b> Avellaneda Av. Bartolomé Mitre 5425, Buenos Aires.</p>
+        <p>&copy; 2023 <span class="green">Recycle</span><span class="blue">World</span>. Todos los derechos reservados.</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
 

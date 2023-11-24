@@ -8,7 +8,7 @@ body{
     color: #333;
     font-size: 1.2em;
 }
-header{
+.header{
     background-color: #fff;
     color: #fff;
     text-align: center;
@@ -16,37 +16,34 @@ header{
 #logo{
     width: 50%;
 }
+
 .background-header{
     background-color: #333;
     border: 4px solid #acff00;
 }
 nav ul{
     list-style-type: none;
+    display: flex;
+    font-size: .8em;
+    gap: 20px;
+    justify-content: center;
 }
-
-nav ul li{
-    display: inline;
-    margin-right: 20px;
+#calculadora{
+    text-align: center;
 }
-
-a{
+.nav-link{
     text-decoration: none;
     color: #000;
-    font-size: 1.5em;
-}
-a:hover{
-    color: #fff;
-    transition: all .3s;
-    font-size: 2em;
-}
-button{
+    font-size: 1em;
     background-color: #0ff;
     border: 3px solid #fff;
     border-radius: 40px;
+    padding: 5px;
 }
-button:hover{
-    background-color: #0888;
-    border-radius: 5px;
+.nav-link:hover{
+    font-size: 2em;
+    color: #fff;
+    background-color: #0c6565;
     transition: all 1s;
 }
 main{
@@ -89,6 +86,17 @@ section h2{
     height: 70%;
     border-radius: 20px;
 }
+.header-calculadora{
+    text-align: center;
+}
+form{
+    border: 2px solid orange;
+    padding: 10px;
+}
+
+.darkblue{
+    color: #2aafaf;
+}
 .darkgreen{
     color: #1eb21e;
 }
@@ -110,13 +118,31 @@ section h2{
     border: 2px solid #000;
     margin: 20px;
 }
-
 @media screen and (max-width: 650px ){
     body{
         font-size: .9em;
     }
-    a{
+    nav ul{
+        display: flex;
+        flex-direction: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 25px;
+    }
+    .nav-link{
+        text-decoration: none;
+        color: #000;
         font-size: 1em;
+        background-color: #0ff;
+        border: 3px solid #fff;
+        border-radius: 40px;
+        padding: 5px;
+    }
+    .nav-link:active{
+        color: #fff;
+        background-color: #0c6565;
+        transition: all 0s;
     }
     ul{
         display: flex;
