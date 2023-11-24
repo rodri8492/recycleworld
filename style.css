@@ -31,6 +31,9 @@ nav ul{
 #calculadora{
     text-align: center;
 }
+#calcular{
+    margin: 5px;
+}
 .nav-link{
     text-decoration: none;
     color: #000;
@@ -158,5 +161,16 @@ form{
     }
     .fotos-momo{
         display: block;
+    }
+}
+@media screen and (min-width: 651px) {
+    .nav-link{
+        font-size: 1.1em;
+    }
+    .nav-link:hover{
+        font-size: 1.8em;
+    }
+    #calculadora form{
+        font-size: 1.5em;
     }
 }
